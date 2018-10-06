@@ -2,7 +2,7 @@
 [CleanBlog](https://startbootstrap.com/template-overviews/clean-blog/) theme for [Journal](https://github.com/vantezzen/journal).
 
 # Installation
-1. [Download this repository](https://github.com/vantezzen/journal/archive/master.zip)
+1. [Download this repository](https://github.com/vantezzen/journal-cleanblog/archive/master.zip)
 2. In your Journal `themes/` folder, create a new `clean_blog` folder
 3. Copy the repository contents into the `themes/clean_blog/` folder
 4. Go to Journals' settings, under "Theme" choose "clean_blog"
