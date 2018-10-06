@@ -16,3 +16,5 @@
 You can customize CleanBlog by exiting its source files, located in your `themes/clean_blog/` folder.
 ### Custom social media links
 Open `themes/clean_blog/base.html`, scroll down to line 58, replace `https://twitter.com/username` with your twitter url, scroll to line 66 and replace `https://facebook.com/username` with your Facebook url.
+### Custom images
+All images are located inside `themes/clean_blog/assets/img/`. `home-bg.jpg` will be shown on the homepage, `post-bg.jpg` on the post page.
