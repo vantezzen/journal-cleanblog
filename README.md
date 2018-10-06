@@ -8,6 +8,9 @@
 4. Go to Journals' settings, under "Theme" choose "clean_blog"
 5. Save settings - Your blog should now be in the CleanBlog theme
 
+# Source
+Most of this projects' source code originates form the [Bootstrap Theme Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/). It has been modified to work with Journal.
+
 # Screenshots
 <p align="center"><img src="img/home.png"></p>
 <p align="center"><img src="img/post.png"></p>
