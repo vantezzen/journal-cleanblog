@@ -1,0 +1,35 @@
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>{{ title }}</h1>
+                    <span class="subheading">{{ description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            {{# post }}
+            <div class="post-preview">
+                <a href="{{ path }}">
+                    <h2 class="post-title">
+                        {{ title }}
+                    </h2>
+                    <h3 class="post-subtitle">
+                        {{# trimmedText }}100{{/ trimmedText }}
+                    </h3>
+                </a>
+            </div>
+            <hr>
+            {{/ post }}
+        </div>
+    </div>
+</div>
