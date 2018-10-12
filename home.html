@@ -30,6 +30,17 @@
             </div>
             <hr>
             {{/ post }}
+
+            {{# pagination }}
+            <div class="clearfix">
+                {{# prev }}
+                    <a class="btn btn-primary" href="{{ prev }}">Newer Posts</a>
+                {{/ prev }}
+                {{# next }}
+                    <a class="btn btn-primary float-right" href="{{ next }}">Older Posts</a>
+                {{/ next }}
+            </div>
+            {{/ pagination }}
         </div>
     </div>
 </div>
