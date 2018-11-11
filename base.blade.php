@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ language }}">
+<html lang="{{ $language }}">
 
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{{ $description }}">
 
-    <title>{{ title }}</title>
+    <title>{{ $title }}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +27,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">{{ title }}</a>
+        <a class="navbar-brand" href="index.html">{{ $title }}</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -38,18 +37,18 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            {{# menu }}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ url }}">{{ text }}</a>
-              </li>
-            {{/ menu }}
+            @foreach ($menu as $item)
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ $item['url'] }}">{{ $item['text'] }}</a>
+                </li>
+            @endforeach
           </ul>
         </div>
       </div>
     </nav>
 
 
-    {{{ content }}}
+    @yield('content')
 
     <hr>
 
@@ -76,7 +75,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">{{ copyright }}</p>
+            <p class="copyright text-muted">{{ $copyright }}</p>
           </div>
         </div>
       </div>
